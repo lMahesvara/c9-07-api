@@ -9,7 +9,7 @@
     "dev": "nodemon ./src/index.js --exec babel-node",
     "start": "node ./src/index.js"
   },
-  "author": "robertquillaslopez@gmail.com",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
