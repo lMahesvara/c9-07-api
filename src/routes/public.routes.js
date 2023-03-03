@@ -4,6 +4,7 @@ import { registerController } from '../controllers/register.controller.js'
 import { authAdmin } from '../middlewares/verifyToken.js'
 import { getProductController } from '../controllers/get.products.controller.js'
 import { addProductController } from '../controllers/add.products.controller.js'
+import filterCategoryController from '../controllers/filter.category.controller.js'
 
 export const publicRoutes = Router()
 
