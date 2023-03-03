@@ -20,4 +20,4 @@ publicRoutes.post('/api/filterCategoryController', (req, res) =>
 publicRoutes.post('/api/addproductos', (req, res) =>
   addProductController(req, res)
 )
-publicRoutes.post('/api/validacion', authAdmin)
+publicRoutes.get('/api/validacion', authAdmin)
