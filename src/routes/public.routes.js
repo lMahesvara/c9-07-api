@@ -9,7 +9,8 @@ export const publicRoutes = Router()
 
 publicRoutes.post('/api/login', (req, res) => loginController(req, res))
 publicRoutes.post('/api/registro', (req, res) => registerController(req, res))
-publicRoutes.get('/api/getproductos', (req, res) =>
+publicRoutes.get('/api/productos', (req, res) => getProductController(req, res))
+publicRoutes.get('/api/productos/:id', (req, res) =>
   getProductController(req, res)
 )
 publicRoutes.post('filterCategoryController', (req, res) =>
