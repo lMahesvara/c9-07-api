@@ -14,7 +14,7 @@ publicRoutes.get('/api/productos', (req, res) => getProductController(req, res))
 publicRoutes.get('/api/productos/:id', (req, res) =>
   getProductController(req, res)
 )
-publicRoutes.post('filterCategoryController', (req, res) =>
+publicRoutes.post('/api/filterCategoryController', (req, res) =>
   filterCategoryController(req, res)
 )
 publicRoutes.post('/api/addproductos', (req, res) =>
