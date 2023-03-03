@@ -2,6 +2,8 @@ import { Router } from 'express'
 import { loginController } from '../controllers/login.controller.js'
 import { registerController } from '../controllers/register.controller.js'
 import { authAdmin } from '../middlewares/verifyToken.js'
+import { getProductController } from '../controllers/get.products.controller.js'
+import { addProductController } from '../controllers/add.products.controller.js'
 
 export const publicRoutes = Router()
 
