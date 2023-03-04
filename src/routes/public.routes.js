@@ -5,6 +5,10 @@ import { authAdmin } from '../middlewares/verifyToken.js'
 import { getProductController } from '../controllers/get.products.controller.js'
 import { addProductController } from '../controllers/add.products.controller.js'
 import filterCategoryController from '../controllers/filter.category.controller.js'
+import {
+  compraController,
+  getCompraController,
+} from '../controllers/compra.controller.js'
 
 export const publicRoutes = Router()
 
@@ -21,3 +25,5 @@ publicRoutes.post('/api/addproductos', (req, res) =>
   addProductController(req, res)
 )
 publicRoutes.get('/api/validacion', authAdmin)
+publicRoutes.post('/api/compra', compraController(req, res))
+publicRoutes.get('/api/compra', getCompraController(req, res))
