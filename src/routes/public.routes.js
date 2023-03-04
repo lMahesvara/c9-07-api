@@ -26,4 +26,4 @@ publicRoutes.post('/api/addproductos', (req, res) =>
 )
 publicRoutes.get('/api/validacion', authAdmin)
 publicRoutes.post('/api/compra', compraController(req, res))
-publicRoutes.post('/api/getcompra', getCompraController(req, res))
+publicRoutes.get('/api/compra/:id', getCompraController(req, res))

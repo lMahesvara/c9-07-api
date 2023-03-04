@@ -43,7 +43,7 @@ export const compraController = async (req, res) => {
 
 export const getCompraController = async (req, res) => {
   try {
-    const id = req.body.id
+    const { id } = req.params
 
     if (!id) return res.json({ error: true, msg: 'Ingrese el id' })
 
