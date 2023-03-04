@@ -2,6 +2,7 @@ import Compra from '../models/compra.model.js'
 import User from '../models/user.model.js'
 
 export const compraController = async (req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', '*')
   try {
     const tipoEnvio = req.body.tipoEnvio
     const tipoPago = req.body.tipoPago
@@ -43,6 +44,7 @@ export const compraController = async (req, res) => {
 
 export const getCompraController = async (req, res) => {
   try {
+    res.setHeader('Access-Control-Allow-Origin', '*')
     const { id } = req.params
 
     if (!id) return res.json({ error: true, msg: 'Ingrese el id' })
